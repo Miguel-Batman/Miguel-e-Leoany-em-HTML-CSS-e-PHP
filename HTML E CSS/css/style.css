@@ -1,4 +1,11 @@
 body {
-    background-color: rgb(249, 215, 137);
-    color:rgba(217, 54, 171, 0.852);
+    background-color: rgb(238, 231, 215);
+    color:rgba(0, 0, 0, 0.852);
+}
+h1{
+    text-align: center;
+}
+
+ul{
+    font-size: larger;
 }
