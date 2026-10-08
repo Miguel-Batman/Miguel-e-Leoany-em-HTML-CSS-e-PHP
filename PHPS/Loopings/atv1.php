@@ -2,11 +2,11 @@
 <?php
 
 for ($i = 1; $i <= 20; $i++) {
-    echo "$i
-";
+    echo "$i\n";
 }
 
 ?>
+
 
 <!-- usando while -->
 <?php
@@ -14,8 +14,7 @@ for ($i = 1; $i <= 20; $i++) {
 $aluno = 1;
 
 while ($aluno <= 20){
-    echo "$aluno
-";
+    echo "$aluno\n";
     $aluno++;
 }
 
