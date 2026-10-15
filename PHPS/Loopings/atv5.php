@@ -1,20 +1,22 @@
 <!-- usando for -->
 <?php
-
+$resultado = 0;
+for ($i = 0; $i <= 100; $i++){
+    $resultado = $resultado + $i;
+}echo "$resultado"
 
 
 ?>
+
+
 <!-- usando while -->
 <?php
 
-$num = 1;
-$num2 = 0;
+$num1 = 1;
 $resultado = 0;
-$soma = 1;
-while ($num <= 100){
-    $resultado = $resultado + $soma;
-    $soma = $num++ + $num - 1;
-    
+while ($num1 <= 100){
+    $resultado = $resultado + $num1;
+    $num1++;
 }echo "$resultado"
 
 
