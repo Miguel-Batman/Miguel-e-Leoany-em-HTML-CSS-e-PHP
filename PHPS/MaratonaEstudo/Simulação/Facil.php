@@ -2,19 +2,21 @@
 
 
 $astro = [
-    ["nome" => "Jezo", "ponto" => 100],
-    ["nome" => "Mica", "ponto" => 40],
-    ["nome" => "Mig", "ponto" => 100],
-    ["nome" => "War", "ponto" => 20],
-    ["nome" => "Gus", "ponto" => 90]
+    "Astronauta 1",
+    "Astronauta 2",
+    "Astronauta 3",
+    "Astronauta 4",
+    "Astronauta 5"
 ];
 
 $apto = 0;
 
 foreach ($astro as $cand) {
-    $nome = $cand["nome"];
-    $ponto = $cand["ponto"];
-
+    $nome = readline("Digite seu nome: ");
+    $ponto = readline("Quantos pontos adquiriu?: ");
+    while ($ponto > 100) {
+        $ponto = readline("Quantos pontos adquiriu?: ");
+    }
     if ($ponto >= 80 && $ponto <= 100) {
         echo "$nome apto com $ponto pontos\n";
         $apto++;
@@ -22,7 +24,6 @@ foreach ($astro as $cand) {
         echo "$nome Em Treinamento com $ponto pontos\n";
     } else {
         echo "$nome nao apto com $ponto pontos\n";
-        
     }
 }
 echo "Há $apto candidatos aptos\n";

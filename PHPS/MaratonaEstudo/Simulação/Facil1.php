@@ -19,29 +19,37 @@ $voto22 = 0;
 $votob = 0;
 
 
-echo "13 – Candidata Ana.
-22 – Candidato João.
-14 – Voto em branco.
+echo "13 – Candidata Lula.
+22 – Candidato Flafla.
+14 – Voto em branco(Renan).
 ";
 foreach ($eleitores as $eleitor) {
     $voto = readline("digite seu voto: ");
 
     while ($voto != 13 and $voto != 22 and $voto != 14) {
-        echo "Candidato inexistente";
+        echo "Candidato inexistente\n";
         $voto = readline("digite seu voto: ");
     }
 
     if ($voto == 13){
         $voto13++;
-        echo "voto confirmado";
+        echo "voto confirmado\n";
     }else if ($voto == 22){
         $voto22++;
-        echo "voto confirmado";
+        echo "voto confirmado\n";
     }else{
         $votob++;
-        echo "voto Nulo confirmado";
+        echo "voto Nulo confirmado\n";
     }
 
-} echo "voto em 13: $voto13 votos em 22: $voto22 Votos em nulo: $votob";
+} echo "Votos em 13: $voto13. Votos em 22: $voto22. Votos em nulo: $votob\n";
+
+if ($voto13>=$voto22){
+    echo "lulinha ganhou com $voto13 votos";
+}else if ($voto13<=$voto22){
+    echo "bolsomico ganhou com $voto22 votos";
+}else{
+    echo "inuteis ambos perderam aura";
+}
 
 ?>
